@@ -15,8 +15,15 @@
 <body>
     <header></header>
     <main>
-        <!-- пишем тут -->
-        
+        <h1>Новогодние поздравления</h1>
+        <form onsubmit="add(event)">
+            <input type="text" id="text" maxlength="100" placeholder="Напишите свое новогоднее пожелание" required>
+            <button type="submit" title="Добавить поздравление" id="submit">
+                <img src="img/giftbox.svg" width="32">
+            </button>
+        </form>
+        <ul id="list">
+        </ul>
     </main>
     <div class="snowflakes" aria-hidden="true">
         <div class="snowflake">
